@@ -4,9 +4,9 @@
   "author": "ruckuus",
   "summary": "Puppet module to install common development/administration tools.",
   "license": "MIT",
-  "source": "",
-  "project_page": null,
-  "issues_url": null,
+  "source": "https://github.com/ruckuus/devtools.git",
+  "project_page": "https://github.com/ruckuus/devtools",
+  "issues_url": "https://github.com/ruckuus/devtools/issues",
   "dependencies": [
     {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
   ]

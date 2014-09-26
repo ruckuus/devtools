@@ -1,41 +1,21 @@
 # == Class: devtools
 #
-# Full description of class devtools here.
-#
-# === Parameters
-#
-# Document parameters here.
-#
-# [*sample_parameter*]
-#   Explanation of what this parameter affects and what it defaults to.
-#   e.g. "Specify one or more upstream ntp servers as an array."
-#
-# === Variables
-#
-# Here you should define a list of variables that this module would require.
-#
-# [*sample_variable*]
-#   Explanation of how this variable affects the funtion of this class and if
-#   it has a default. e.g. "The parameter enc_ntp_servers must be set by the
-#   External Node Classifier as a comma separated list of hostnames." (Note,
-#   global variables should be avoided in favor of class parameters as
-#   of Puppet 2.6.)
+# A module that will install common utilities for sysadmin/developer in *nix.
 #
 # === Examples
 #
-#  class { 'devtools':
-#    servers => [ 'pool.ntp.org', 'ntp.local.company.com' ],
-#  }
+#  class { 'devtools': }
 #
 # === Authors
 #
-# Author Name <author@domain.com>
+# Author Name <ruckuus@gmail.com>
 #
 # === Copyright
 #
-# Copyright 2014 Your name here, unless otherwise noted.
+# Copyright 2014 Dwi Sasongko S, unless otherwise noted.
 #
 class devtools {
-
-
+  package { ['git', 'mtr', 'sar', 'vim', 'zip', 'htop', 'make', 'iotop', 'iperf', 'ngrep', 'unzip', 'screen', 'strace', 'tcpdump', 'sysstat', 'iproute', 'libpcre3', 'dos2unix', 'iptables', 'bind9utils', 'traceroute', 'libpcre3-dev', 'ntop', 'rsync', 'tig', 'vnstat', 'iptraf' ]:
+    ensure => latest
+  }
 }

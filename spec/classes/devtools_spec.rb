@@ -12,9 +12,11 @@ describe 'devtools', :type => :class do
     it { should contain_package('mtr').with_ensure('latest') }
     it { should contain_package('vim').with_ensure('latest') }
     it { should contain_package('zip').with_ensure('latest') }
+    it { should contain_package('curl').with_ensure('latest') }
     it { should contain_package('htop').with_ensure('latest') }
     it { should contain_package('ntop').with_ensure('latest') }
     it { should contain_package('make').with_ensure('latest') }
+    it { should contain_package('wget').with_ensure('latest') }
     it { should contain_package('iotop').with_ensure('latest') }
     it { should contain_package('iperf').with_ensure('latest') }
     it { should contain_package('ngrep').with_ensure('latest') }

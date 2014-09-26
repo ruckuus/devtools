@@ -15,7 +15,7 @@
 # Copyright 2014 Dwi Sasongko S, unless otherwise noted.
 #
 class devtools {
-  package { ['git', 'mtr', 'vim', 'zip', 'htop', 'make', 'iotop', 'iperf', 'ngrep', 'unzip', 'screen', 'strace', 'tcpdump', 'sysstat', 'iproute', 'libpcre3', 'dos2unix', 'iptables', 'bind9utils', 'traceroute', 'libpcre3-dev', 'ntop', 'rsync', 'tig', 'vnstat', 'iptraf' ]:
+  package { ['git', 'mtr', 'vim', 'zip', 'htop', 'make', 'iotop', 'iperf', 'ngrep', 'unzip', 'screen', 'strace', 'tcpdump', 'sysstat', 'iproute', 'libpcre3', 'dos2unix', 'iptables', 'bind9utils', 'traceroute', 'libpcre3-dev', 'ntop', 'rsync', 'tig', 'vnstat', 'iptraf', 'curl', 'wget' ]:
     ensure => latest
   }
 }
